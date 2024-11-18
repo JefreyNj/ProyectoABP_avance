@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto ABP</title>
+    <style>
+        
+
+        /* Crear formas con sombras y color */
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.6;
+            pointer-events: none;
+        }
+
+        
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            height: 100vh;
+            position: relative; /* Asegura que los elementos de la tabla estén por encima del fondo */
+            z-index: 1; /* Establece la tabla por encima de las formas */
+        }
+
+        /* Contenedor de texto para destacarlo */
+        .content-container {
+            position: relative;
+            z-index: 2; /* Asegura que el texto esté encima de todo */
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 90%;
+            margin: 0 auto;
+        }
+        h2{
+            text-align: center;
+        }
+
+        h1, p {
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        /* Menú estilo */
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 15px 0;
+            font-size: 15px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            background-color: #66bb6a;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-size: 1.2em;
+            transition: background-color 0.3s, transform 0.2s;
+            display: inline-block;
+        }
+
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 1em;
+            color: #333;
+            padding: 15px 0;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Formas de fondo -->
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+    <div class="shape shape3"></div>
+
+    <table>
+        <tr height="10%">
+            <td colspan="2">
+                <div class="content-container">
+                    <h1>Ecocycle: Reciclaje para un Futuro Sostenible</h1>
+                    <p>
+                        <h2>Proyecto ABP</h2>
+                    </p>
+                </div>
+            </td>
+        </tr>
+
+        <tr height="80%">
+            <td width="20%" valign="top">
+                <nav>
+                    <h3>Menú</h3>
+                    <ul>
+                        <li><a href="Resumen.html" target="contenido">Resumen</a></li>
+                        <li><a href="Abstract.html" target="contenido">Abstract</a></li>
+                        <li><a href="Introduccion.html" target="contenido">Introducción</a></li>
+                        <li><a href="Metodologia.html" target="contenido">Metodologia</a></li>
+                        <li><a href="Objetivos.html" target="contenido">Objetivos</a></li>
+                        <li><a href="Analisis.html" target="contenido">Analisis</a></li>
+                    </ul>
+                </nav>
+            </td>
+
+            <td>
+                <iframe name="contenido" src="Resumen.html"></iframe>
+            </td>
+        </tr>
+
+        <tr height="10%">
+            <td colspan="2">
+                <footer>
+                    <p>2024 ©  Castro Suárez Luis Miguel  2024 ©  Cortes Nivia Juan José  2024 ©  Garzón Pachón Diego Alejandro  2024 ©  Herrera Ortega José Saúl  2024 ©  Perdomo Urrea Juan David</p>
+                </footer>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
